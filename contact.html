@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bloom Elegance</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="logo">🌸 Bloom Elegance</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="flowers.html">Flowers</a></li>
+            <li><a href="cakes.html">Cakes</a></li>
+            <li><a href="bouquets.html">Bouquets</a></li>
+            <li><a class="active" href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+
+    <h2 class="section-title">Contact Us</h2>
+    <p style="text-align:center; margin-bottom:20px; color:#666;">
+        We'd love to hear from you! Reach us through our social platforms or send a message.
+    </p>
+
+    <!-- SOCIAL LINKS -->
+    <div class="social-box">
+
+        <a class="social-btn insta" href="https://instagram.com" target="_blank">
+            🌸 Instagram
+        </a>
+
+        <a class="social-btn whatsapp" href="https://wa.me/923000000000" target="_blank">
+            💬 WhatsApp
+        </a>
+
+        <a class="social-btn fb" href="https://facebook.com" target="_blank">
+            📘 Facebook
+        </a>
+
+    </div>
+
+    <!-- CONTACT FORM -->
+    <form class="form-box" id="contactForm">
+
+        <label>Your Name</label>
+        <input type="text" id="cName" required placeholder="Enter your name">
+
+        <label>Your Email</label>
+        <input type="email" id="cEmail" required placeholder="Enter your email">
+
+        <label>Your Message</label>
+        <textarea id="cMsg" rows="5" required placeholder="Write your message..."></textarea>
+
+        <button class="btn" type="submit">Send Message</button>
+    </form>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Bloom Elegance — All Rights Reserved</p>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("✨ Your message has been sent!");
+    document.getElementById("contactForm").reset();
+});
+</script>
+
+</body>
+</html>
