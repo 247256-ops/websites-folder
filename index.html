@@ -1,110 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bloom Elegance - Home</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Elegance | Premium Flowers & Cakes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-<header>
-    <nav class="navbar">
-        <div class="logo">🌸 Bloom Elegance</div>
-        <ul class="nav-links">
-            <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="brand-logo">
+                    <img src="images/logo.png" alt="Logo">
+                    <span>Bloom Elegance</span>
+                </a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="flowers.html">Flowers</a></li>
+                <li><a href="cakes.html">Cakes</a></li>
+                <li><a href="bouquets.html">Bouquets</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <li><a href="flowers.html">Flowers</a></li>
-            <li><a href="cakes.html">Cakes</a></li>
-            <li><a href="bouquets.html">Bouquets</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
-</header>
-
-<!-- HERO SLIDER -->
-<section class="hero-slider">
-    <div class="slide fade">
-        <img src="images/hero1.jpg" />
-        <div class="hero-text">
-            <h1>Elegance in Every Petal</h1>
-            <p>Premium Flowers Delivered With Love</p>
+    <section class="hero-slider">
+        <div class="slide active"><img src="images/hero1.jpg" alt="Hero 1"></div>
+        <div class="slide"><img src="images/hero2.jpg" alt="Hero 2"></div>
+        <div class="slide"><img src="images/hero3.jpg" alt="Hero 3"></div>
+        <div class="hero-overlay">
+            <h1>Nature's Finest Blooms</h1>
+            <p>Handcrafted with love, delivered with care.</p>
+            <a href="flowers.html" class="btn">Explore Collection</a>
         </div>
-    </div>
+    </section>
 
-    <div class="slide fade">
-        <img src="images/hero2.jpg" />
-        <div class="hero-text">
-            <h1>Luxury Fresh Bouquets</h1>
-            <p>Soft Pink & Beige Collection</p>
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">✨ New Arrivals</h2>
+            <div class="gallery">
+                <div class="card">
+                    <img src="images/new1.jpg" alt="New">
+                    <h3>Midnight Bloom</h3>
+                    <p>Rs. 3200</p>
+                    <button onclick="handleOrder('Midnight Bloom')" class="btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <img src="images/featured.png" alt="Featured">
+                    <h3>Featured Choice</h3>
+                    <p>Rs. 4500</p>
+                    <button onclick="handleOrder('Featured Choice')" class="btn">Order Now</button>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="slide fade">
-        <img src="images/hero3.jpg" />
-        <div class="hero-text">
-            <h1>New Arrivals Daily</h1>
-            <p>Handcrafted Floral Designs</p>
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="section-title">🏆 Best Sellers</h2>
+            <div class="gallery">
+                <div class="card">
+                    <img src="images/sunflower.jpg" alt="Sunflower">
+                    <h3>Golden Sunflower</h3>
+                    <p>Rs. 1800</p>
+                    <button onclick="handleOrder('Golden Sunflower')" class="btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <img src="images/cake1.jpg" alt="Cake">
+                    <h3>Choco Heaven</h3>
+                    <p>Rs. 2500</p>
+                    <button onclick="handleOrder('Choco Heaven')" class="btn">Order Now</button>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- MOST SOLD -->
-<section class="section">
-    <h2>Most Sold Items</h2>
-    <div class="gallery">
-        <div class="card">
-            <img src="images/rose.jpg" />
-            <h3>Red Roses</h3>
-            <p>Perfect for expressing love.</p>
-            <a href="order.html" class="btn">Order Now</a>
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">🔥 Most Sold Items</h2>
+            <div class="gallery">
+                <div class="card">
+                    <img src="images/rose.jpg" alt="Rose">
+                    <h3>Classic Red Rose</h3>
+                    <p>Rs. 1500</p>
+                    <button onclick="handleOrder('Red Rose')" class="btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <img src="images/bouquet2.jpg" alt="Bouquet">
+                    <h3>Pink Elegance</h3>
+                    <p>Rs. 3800</p>
+                    <button onclick="handleOrder('Pink Elegance')" class="btn">Order Now</button>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <img src="images/bouquet1.jpg" />
-            <h3>Bridal Bouquet</h3>
-            <p>Soft pink & beige theme.</p>
-            <a href="order.html" class="btn">Order Now</a>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>🌸 Bloom Elegance</h3>
+                <p>Premium flowers and artisan cakes for your special moments.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Gulberg III, Lahore</p>
+                <p>+92 300 1234567</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="instagram-btn">📸 Instagram</a>
+                </div>
+            </div>
         </div>
+        <div class="footer-bottom">
+            <p>© 2026 Bloom Elegance | All Rights Reserved</p>
+        </div>
+    </footer>
 
-        <div class="card">
-            <img src="images/cake1.jpg" />
-            <h3>Fresh Cream Cake</h3>
-            <p>Best for celebrations.</p>
-            <a href="order.html" class="btn">Order Now</a>
-        </div>
-    </div>
-</section>
-
-<!-- NEW ARRIVALS -->
-<section class="section">
-    <h2>New Arrivals</h2>
-    <div class="gallery">
-        <div class="card">
-            <img src="images/tulip.jpg" />
-            <h3>Tulip Arrangement</h3>
-            <p>Elegant pastel tones.</p>
-        </div>
-        <div class="card">
-            <img src="images/sunflower.jpg" />
-            <h3>Sunflower Bunch</h3>
-            <p>Brighten any day.</p>
-        </div>
-        <div class="card">
-            <img src="images/new1.jpg" />
-            <h3>Signature Pink Mix</h3>
-            <p>Most trending bouquet.</p>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 Bloom Elegance</p>
-</footer>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
