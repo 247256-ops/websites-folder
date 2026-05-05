@@ -3,23 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - Bloom Elegance</title>
+    <title>Register | Bloom Elegance</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body style="background: linear-gradient(rgba(255,179,204,0.3), rgba(255,179,204,0.3)), url('images/hero1.jpg') center/cover no-repeat; min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: 'Poppins', sans-serif;">
 
-<div class="form-box">
-    <h2>Create Account</h2>
+    <div class="form-box" style="margin: 0; backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.85); border-radius: 30px; padding: 40px; width: 100%; max-width: 420px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); border: 1px solid rgba(255,255,255,0.3);">
+        
+        <div style="text-align: center; margin-bottom: 30px;">
+            <div style="font-size: 3rem; margin-bottom: 10px;">🌸</div>
+            <h2 style="color: #c2185b; font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 700;">Create Account</h2>
+            <p style="font-size: 0.95rem; color: #666; letter-spacing: 0.5px;">Join our premium floral community</p>
+        </div>
 
-    <form id="registerForm">
-        <input type="text" id="regName" placeholder="Full Name" required>
-        <input type="email" id="regEmail" placeholder="Email" required>
-        <input type="password" id="regPass" placeholder="Password" required>
-        <button class="btn" type="submit">Register</button>
-    </form>
+        <form id="regForm">
+            <div class="input-group" style="margin-bottom: 18px;">
+                <label style="font-size: 0.75rem; font-weight: 700; color: #c2185b; letter-spacing: 1px; text-transform: uppercase;">Full Name</label>
+                <div style="position: relative;">
+                    <input type="text" placeholder="Enter your name" required style="width: 100%; padding: 14px; border: 2px solid #ffe4ed; border-radius: 12px; margin-top: 8px; box-sizing: border-box; background: rgba(255,255,255,0.8); transition: 0.3s; font-size: 0.9rem;">
+                </div>
+            </div>
 
-</div>
+            <div class="input-group" style="margin-bottom: 18px;">
+                <label style="font-size: 0.75rem; font-weight: 700; color: #c2185b; letter-spacing: 1px; text-transform: uppercase;">Email Address</label>
+                <input type="email" placeholder="example@mail.com" required style="width: 100%; padding: 14px; border: 2px solid #ffe4ed; border-radius: 12px; margin-top: 8px; box-sizing: border-box; background: rgba(255,255,255,0.8); transition: 0.3s; font-size: 0.9rem;">
+            </div>
+            
+            <div class="input-group" style="margin-bottom: 18px;">
+                <label style="font-size: 0.75rem; font-weight: 700; color: #c2185b; letter-spacing: 1px; text-transform: uppercase;">Password</label>
+                <input type="password" placeholder="••••••••" required style="width: 100%; padding: 14px; border: 2px solid #ffe4ed; border-radius: 12px; margin-top: 8px; box-sizing: border-box; background: rgba(255,255,255,0.8); transition: 0.3s; font-size: 0.9rem;">
+            </div>
 
-<script src="script.js"></script>
+            <button type="submit" class="btn" style="width: 100%; margin-top: 20px; font-size: 1rem; letter-spacing: 1.5px; padding: 15px; background: #c2185b; color: white; border: none; border-radius: 12px; cursor: pointer; font-weight: 600; box-shadow: 0 10px 20px rgba(194, 24, 91, 0.2); transition: 0.4s;">
+                REGISTER NOW
+            </button>
+        </form>
+
+        <div style="text-align: center; margin-top: 25px; font-size: 0.9rem;">
+            <span style="color: #666;">Already a member? </span>
+            <a href="login.html" style="color: #c2185b; font-weight: 700; text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s;">Sign In</a>
+        </div>
+        
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="index.html" style="text-decoration: none; font-size: 0.85rem; color: #aaa; transition: 0.3s;">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

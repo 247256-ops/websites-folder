@@ -3,23 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Bloom Elegance</title>
+    <title>Login | Bloom Elegance</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+<body style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('images/hero1.jpg') center/cover no-repeat; min-height: 100vh; display: flex; align-items: center; justify-content: center; font-family: 'Poppins', sans-serif;">
 
-<body>
+    <div class="form-box" style="margin: 0; backdrop-filter: blur(12px); background: rgba(255, 255, 255, 0.85); border-radius: 30px; padding: 45px; width: 100%; max-width: 420px; box-shadow: 0 20px 50px rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.3);">
+        
+        <div style="text-align: center; margin-bottom: 35px;">
+            <div style="font-size: 3rem; margin-bottom: 10px;">🌸</div>
+            <h2 style="color: #c2185b; font-family: 'Playfair Display', serif; font-size: 2.3rem; font-weight: 700;">Welcome Back</h2>
+            <p style="font-size: 0.95rem; color: #666; letter-spacing: 0.5px;">Login to manage your floral orders</p>
+        </div>
 
-<div class="form-box">
-    <h2>Login</h2>
+        <form id="loginForm">
+            <div class="input-group" style="margin-bottom: 20px;">
+                <label style="font-size: 0.75rem; font-weight: 700; color: #c2185b; letter-spacing: 1px; text-transform: uppercase;">Email Address</label>
+                <input type="email" placeholder="example@mail.com" required style="width: 100%; padding: 14px; border: 2px solid #ffe4ed; border-radius: 12px; margin-top: 8px; box-sizing: border-box; background: rgba(255,255,255,0.8); outline: none; transition: 0.3s;">
+            </div>
+            
+            <div class="input-group" style="margin-bottom: 10px;">
+                <label style="font-size: 0.75rem; font-weight: 700; color: #c2185b; letter-spacing: 1px; text-transform: uppercase;">Password</label>
+                <input type="password" placeholder="••••••••" required style="width: 100%; padding: 14px; border: 2px solid #ffe4ed; border-radius: 12px; margin-top: 8px; box-sizing: border-box; background: rgba(255,255,255,0.8); outline: none; transition: 0.3s;">
+            </div>
 
-    <form id="loginForm">
-        <input type="email" id="loginEmail" placeholder="Email" required>
-        <input type="password" id="loginPassword" placeholder="Password" required>
-        <button class="btn" type="submit">Login</button>
-        <p>New user? <a href="register.html">Create account</a></p>
-    </form>
-</div>
+            <div style="text-align: right; margin-bottom: 25px;">
+                <a href="#" style="font-size: 0.8rem; color: #c2185b; text-decoration: none; font-weight: 500;">Forgot Password?</a>
+            </div>
 
-<script src="script.js"></script>
+            <button type="submit" class="btn" style="width: 100%; font-size: 1rem; letter-spacing: 1.5px; padding: 15px; background: #c2185b; color: white; border: none; border-radius: 12px; cursor: pointer; font-weight: 600; box-shadow: 0 10px 20px rgba(194, 24, 91, 0.2); transition: 0.4s;">
+                SIGN IN
+            </button>
+        </form>
+
+        <div style="text-align: center; margin-top: 30px; font-size: 0.9rem;">
+            <span style="color: #666;">New to Bloom Elegance? </span>
+            <a href="register.html" style="color: #c2185b; font-weight: 700; text-decoration: none;">Create Account</a>
+        </div>
+        
+        <div style="text-align: center; margin-top: 25px;">
+            <a href="index.html" style="text-decoration: none; font-size: 0.85rem; color: #aaa; transition: 0.3s;">
+                <i class="fa-solid fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

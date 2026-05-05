@@ -3,54 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Bloom Elegance</title>
+    <title>About Us | Bloom Elegance Story</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">🌸 Bloom Elegance</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="flowers.html">Flowers</a></li>
-            <li><a href="cakes.html">Cakes</a></li>
-            <li><a href="bouquets.html">Bouquets</a></li>
-            <li><a class="active" href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="brand-logo">
+                    <img src="images/logo.png" alt="Logo">
+                    <span>Bloom Elegance</span>
+                </a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <span></span><span></span><span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flowers.html">Flowers</a></li>
+                <li><a href="cakes.html">Cakes</a></li>
+                <li><a href="bouquets.html">Bouquets</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="about-page">
-
-    <h1>About Bloom Elegance</h1>
-
-    <div class="about-intro-box">
-        <img src="images/author.jpg" alt="Author">
-
-        <div class="about-text">
-            <h2>Hi, I’m Aysha Ishtiaq, Founder of Blossom 🌸</h2>
-            <p>Welcome to Bloom Elegance — a place where every bouquet is made with pure love.</p>
+    <section class="hero-slider" style="height: 45vh;">
+        <div class="slide active">
+            <img src="images/hero2.jpg" alt="About Header">
         </div>
-    </div>
+        <div class="hero-overlay">
+            <h1 style="font-family: 'Playfair Display'; font-size: 3.5rem;">Our Story</h1>
+            <p>Crafting memories with premium petals since 2026</p>
+        </div>
+    </section>
 
-    <div class="about-container">
+    <section class="section bg-white">
+        <div class="container">
+            <div style="display: flex; flex-wrap: wrap; gap: 60px; align-items: center; justify-content: center;">
+                
+                <div style="position: relative;">
+                    <img src="images/author.jpg" alt="Our Founder" style="width: 100%; max-width: 450px; border-radius: 30px; box-shadow: 20px 20px 0px #ffd6e6; position: relative; z-index: 2;">
+                    <div style="position: absolute; top: -20px; left: -20px; width: 100px; height: 100px; background: #c2185b; border-radius: 50%; opacity: 0.1; z-index: 1;"></div>
+                </div>
+                
+                <div style="max-width: 550px; text-align: left;">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">We don't just deliver flowers, <br><span style="color: #c2185b;">we deliver smiles.</span></h2>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #555;">Bloom Elegance started with a simple idea: To make luxury floral arrangements accessible to everyone. We source our flowers daily from the freshest gardens to ensure they last longer in your home.</p>
+                    <p style="margin-top: 20px; font-size: 1.1rem; line-height: 1.8; color: #555;">Our cakes are baked on-order, ensuring that every bite is as fresh as our roses. From Gulberg to your doorstep, we bring elegance to every occasion.</p>
+                    
+                    <div style="margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; border-top: 1px solid #eee; padding-top: 30px;">
+                        <div>
+                            <h4 style="color: #c2185b; font-size: 1.2rem;"><i class="fa-solid fa-location-dot"></i> Location</h4>
+                            <p style="font-size: 0.95rem; color: #777;">Gulberg III, Lahore, Pakistan</p>
+                        </div>
+                        <div>
+                            <h4 style="color: #c2185b; font-size: 1.2rem;"><i class="fa-solid fa-phone"></i> Support</h4>
+                            <p style="font-size: 0.95rem; color: #777;">+92 300 1234567</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <div class="about-box"><h2>1. Our Story</h2><p>Started from a passion...</p></div>
-        <div class="about-box"><h2>2. Our Mission</h2><p>Deliver beauty & emotions.</p></div>
-        <div class="about-box"><h2>3. Premium Quality</h2><p>Only fresh flowers used.</p></div>
-        <div class="about-box"><h2>4. Signature Aesthetic</h2><p>Soft pink & beige theme.</p></div>
-        <div class="about-box"><h2>5. Custom Designs</h2><p>Every bouquet is unique.</p></div>
-        <div class="about-box"><h2>6. Fast Delivery</h2><p>Same-day options available.</p></div>
-        <div class="about-box"><h2>7. Why People Choose Us</h2><p>Because we deliver love, not just flowers.</p></div>
+    <section class="section bg-light" style="border-radius: 80px 80px 0 0;">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="gallery">
+                <div class="card">
+                    <div style="font-size: 3.5rem; margin-bottom: 15px;">🚚</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Same day delivery within 4 hours in the city.</p>
+                </div>
+                <div class="card">
+                    <div style="font-size: 3.5rem; margin-bottom: 15px;">🌿</div>
+                    <h3>Always Fresh</h3>
+                    <p>100% hand-picked fresh flowers every single morning.</p>
+                </div>
+                <div class="card">
+                    <div style="font-size: 3.5rem; margin-bottom: 15px;">🎂</div>
+                    <h3>Custom Bakes</h3>
+                    <p>Customized cakes for birthdays, weddings & more.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>🌸 Bloom Elegance</h3>
+                <p>Making every moment special with our premium flowers and artisan cakes. Hand-picked with love.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul style="list-style: none; line-height: 2.5;">
+                    <li><a href="flowers.html" style="color: #ffd6e6; text-decoration: none;">Fresh Flowers</a></li>
+                    <li><a href="cakes.html" style="color: #ffd6e6; text-decoration: none;">Artisan Cakes</a></li>
+                    <li><a href="bouquets.html" style="color: #ffd6e6; text-decoration: none;">Bouquets</a></li>
+                </ul>
+            </div>
 
-</section>
+            <div class="footer-section">
+                <h3>Follow Our Journey</h3>
+                <div class="social-links" style="justify-content: flex-start; margin-top: 15px;">
+                    <a href="#" target="_blank" class="instagram-btn">
+                        📸 Instagram
+                    </a>
+                    <a href="#" target="_blank" style="background: #25D366; color: white; padding: 10px 25px; border-radius: 30px; text-decoration: none; font-weight: 600; margin-left: 10px;">
+                        💬 WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
 
-<footer><p>© 2026 Bloom Elegance</p></footer>
+        <div class="footer-bottom">
+            <p>© 2026 Bloom Elegance. Designed for Premium Experiences.</p>
+        </div>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

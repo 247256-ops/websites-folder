@@ -1,43 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flowers - Bloom Elegance</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowers Catalog | Bloom Elegance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">🌸 Bloom Elegance</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="flowers.html">Flowers</a></li>
-            <li><a href="cakes.html">Cakes</a></li>
-            <li><a href="bouquets.html">Bouquets</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <a href="index.html" class="brand-logo">
+                    <img src="images/logo.png" alt="Logo">
+                    <span>Bloom Elegance</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="flowers.html" class="active">Flowers</a></li>
+                <li><a href="cakes.html">Cakes</a></li>
+                <li><a href="bouquets.html">Bouquets</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="section">
-    <h2>Our Floral Collection</h2>
+    <section class="hero-slider" style="height: 40vh;">
+        <div class="slide active"><img src="images/hero2.jpg" alt="Flowers Header"></div>
+        <div class="hero-overlay">
+            <h1 style="font-size: 3rem;">Fresh Floral Collection</h1>
+        </div>
+    </section>
 
-    <div class="gallery">
-        <div class="card"><img src="images/rose.jpg"><h3>Roses</h3><p>Classic red & pink roses.</p></div>
-        <div class="card"><img src="images/tulip.jpg"><h3>Tulips</h3><p>Colorful and elegant.</p></div>
-        <div class="card"><img src="images/lily.jpg"><h3>Lilies</h3><p>Fragrant and beautiful.</p></div>
-        <div class="card"><img src="images/sunflower.jpg"><h3>Sunflowers</h3><p>Bright and cheerful.</p></div>
-        <div class="card"><img src="images/bouquet1.jpg"><h3>Wedding Bouquet</h3><p>Perfect for brides.</p></div>
-        <div class="card"><img src="images/new1.jpg"><h3>Signature Mix</h3><p>Pink & beige theme.</p></div>
-    </div>
-</section>
-
+    <section class="section bg-white">
+        <div class="container">
+            <h2 class="section-title">Our Premium Flowers</h2>
+            <div class="gallery">
+                <div class="card">
+                    <img src="images/rose.jpg" alt="Rose">
+                    <h3>Velvet Red Roses</h3>
+                    <p>Rs. 1500</p>
+                    <button onclick="handleOrder('Red Roses')" class="btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <img src="images/tulip.jpg" alt="Tulip">
+                    <h3>Dutch Pastel Tulips</h3>
+                    <p>Rs. 2200</p>
+                    <button onclick="handleOrder('Pastel Tulips')" class="btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <img src="images/sunflower.jpg" alt="Sunflower">
+                    <h3>Golden Sunflowers</h3>
+                    <p>Rs. 1800</p>
+                    <button onclick="handleOrder('Sunflowers')" class="btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <img src="images/lily.jpg" alt="Lily">
+                    <h3>Majestic White Lilies</h3>
+                    <p>Rs. 2500</p>
+                    <button onclick="handleOrder('White Lilies')" class="btn">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- FOOTER -->
 <footer>
-    <p>© 2026 Bloom Elegance</p>
-</footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>🌸 Bloom Elegance</h3>
+            <p>Making every moment special with our premium flowers and artisan cakes. Hand-picked with love.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul style="list-style: none; line-height: 2;">
+                <li><a href="flowers.html" style="color: #ffd6e6; text-decoration: none;">Fresh Flowers</a></li>
+                <li><a href="cakes.html" style="color: #ffd6e6; text-decoration: none;">Artisan Cakes</a></li>
+                <li><a href="about.html" style="color: #ffd6e6; text-decoration: none;">Our Story</a></li>
+            </ul>
+        </div>
 
+        <div class="footer-section">
+            <h3>Follow Our Journey</h3>
+            <p>Get daily floral inspiration:</p>
+            <div class="social-links" style="justify-content: flex-start; margin-top: 15px;">
+                <a href="https://instagram.com/YourUsername" target="_blank" class="instagram-btn">
+                    📸 Instagram
+                </a>
+                <a href="https://wa.me/923001234567" target="_blank" style="background: #25D366; color: white; padding: 10px 20px; border-radius: 30px; text-decoration: none; font-weight: 600;">
+                    💬 WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Bloom Elegance. Designed for Premium Experiences.</p>
+    </div>
+</footer>
+    <script src="script.js"></script>
 </body>
 </html>
